@@ -1,0 +1,130 @@
+/* Modal.css */
+
+/* Modal container */
+.modal {
+  display: none; /* مخفي بشكل افتراضي */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* يظهر المودال عند إضافة فئة "show" */
+.modal.show {
+  display: flex; /* يتم عرض المودال عند وجود هذه الفئة */
+}
+
+/* باقي التنسيقات */
+.modal-content {
+  position: relative;
+  padding: 1rem;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+.confirm-button {
+  background-color: #e3342f;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.cancel-button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+}
+
+.close-button:hover .close-icon {
+  color: #000;
+}
+
+.close-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #666;
+}
+
+/* Modal body */
+.modal-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Modal icon */
+.modal-icon {
+  margin: 0 auto 1rem;
+  width: 3rem;
+  height: 3rem;
+  color: #666;
+}
+
+/* Modal title */
+.modal-title {
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #666;
+}
+
+/* Confirm button */
+.confirm-button {
+  background-color: #e3342f;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.confirm-button:hover {
+  background-color: #cc1f1a;
+}
+
+/* Cancel button */
+.cancel-button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.cancel-button:hover {
+  background-color: #f0f0f0;
+  color: #0073e6;
+}
